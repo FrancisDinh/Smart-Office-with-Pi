@@ -1,0 +1,10 @@
+version: "2.0"
+services:
+  rabbit-broker:
+    image: arm32v7/rabbitmq
+    restart: always
+    container_name: rabbit-broker
+    hostname: rabbit-broker
+    ports:
+      - "5672:5672"
+      - "15672:15672"
